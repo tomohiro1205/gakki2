@@ -8,16 +8,41 @@
 import SwiftUI
 
 struct ContentView: View {
+    //音をならすためのSoundPlayerクラスのインスタンス生成
+    let soundPlayer = soundplayer()
     var body: some View {
-        VStack {
-            Image(systemName: "globe")
-                .imageScale(.large)
-                .foregroundStyle(.tint)
-            Text("Hello, world!")
-        }
-        .padding()
-    }
-}
+        ZStack{
+            //背景画像を指定する
+            Image(.background)
+            //背景を表示するためにレイアウトを整える
+                .backgroundModifier()
+            
+            
+            //水平にレイアウト(横方向にレイアウト)
+            HStack {
+                //シンバルボタン
+                Button {
+                    //ボタンをタップしたときのアクション
+                    //シンバルの音を鳴らす
+                    soundPlayer.cymbalPlay()
+                } label: {
+                    //画像を表示する
+                    Image("cymbal")
+                }//シンバルボタンはここまで
+                Button {
+                    //ボタンをタップしたときのアクション
+                    //シンバルの音を鳴らす
+                    soundPlayer.guitarPlay()
+                } label: {
+                    //画像を表示する
+                    Image("guitar")
+                } //ギターボタンはここまで
+            } //HStack ここまで
+        } //ZStack ここまで
+
+    } //body ここまで
+} //contentView ここまで
+
 
 #Preview {
     ContentView()

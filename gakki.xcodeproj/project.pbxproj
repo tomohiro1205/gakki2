@@ -9,11 +9,13 @@
 /* Begin PBXBuildFile section */
 		4C2FF1312B6FCAE40098053C /* gakkiApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF1302B6FCAE40098053C /* gakkiApp.swift */; };
 		4C2FF1332B6FCAE40098053C /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF1322B6FCAE40098053C /* ContentView.swift */; };
-		4C2FF1352B6FCAE60098053C /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FF1342B6FCAE60098053C /* Assets.xcassets */; };
 		4C2FF1382B6FCAE60098053C /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FF1372B6FCAE60098053C /* Preview Assets.xcassets */; };
 		4C2FF1422B6FCAE60098053C /* gakkiTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF1412B6FCAE60098053C /* gakkiTests.swift */; };
 		4C2FF14C2B6FCAE60098053C /* gakkiUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF14B2B6FCAE60098053C /* gakkiUITests.swift */; };
 		4C2FF14E2B6FCAE60098053C /* gakkiUITestsLaunchTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C2FF14D2B6FCAE60098053C /* gakkiUITestsLaunchTests.swift */; };
+		4C4B82DC2B731D1A008C72A9 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 4C2FF1342B6FCAE60098053C /* Assets.xcassets */; };
+		4C4B82DE2B731D85008C72A9 /* soundplayer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B82DD2B731D85008C72A9 /* soundplayer.swift */; };
+		4C4B82E02B732925008C72A9 /* BackgroundModifier.swift in Sources */ = {isa = PBXBuildFile; fileRef = 4C4B82DF2B732925008C72A9 /* BackgroundModifier.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -44,6 +46,8 @@
 		4C2FF1472B6FCAE60098053C /* gakkiUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = gakkiUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		4C2FF14B2B6FCAE60098053C /* gakkiUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gakkiUITests.swift; sourceTree = "<group>"; };
 		4C2FF14D2B6FCAE60098053C /* gakkiUITestsLaunchTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = gakkiUITestsLaunchTests.swift; sourceTree = "<group>"; };
+		4C4B82DD2B731D85008C72A9 /* soundplayer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = soundplayer.swift; sourceTree = "<group>"; };
+		4C4B82DF2B732925008C72A9 /* BackgroundModifier.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BackgroundModifier.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -96,6 +100,8 @@
 			children = (
 				4C2FF1302B6FCAE40098053C /* gakkiApp.swift */,
 				4C2FF1322B6FCAE40098053C /* ContentView.swift */,
+				4C4B82DF2B732925008C72A9 /* BackgroundModifier.swift */,
+				4C4B82DD2B731D85008C72A9 /* soundplayer.swift */,
 				4C2FF1342B6FCAE60098053C /* Assets.xcassets */,
 				4C2FF1362B6FCAE60098053C /* Preview Content */,
 			);
@@ -231,8 +237,8 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				4C4B82DC2B731D1A008C72A9 /* Assets.xcassets in Resources */,
 				4C2FF1382B6FCAE60098053C /* Preview Assets.xcassets in Resources */,
-				4C2FF1352B6FCAE60098053C /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -259,6 +265,8 @@
 			files = (
 				4C2FF1332B6FCAE40098053C /* ContentView.swift in Sources */,
 				4C2FF1312B6FCAE40098053C /* gakkiApp.swift in Sources */,
+				4C4B82E02B732925008C72A9 /* BackgroundModifier.swift in Sources */,
+				4C4B82DE2B731D85008C72A9 /* soundplayer.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
