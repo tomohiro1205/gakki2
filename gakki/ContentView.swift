@@ -14,7 +14,7 @@ struct ContentView: View {
         ZStack{
             //背景画像を指定する
             Image(.background)
-            //背景を表示するためにレイアウトを整える
+            //背景を表示するためにレイアウトを整える!
                 .backgroundModifier()
             
             
